@@ -28,7 +28,7 @@ def is_enabled(value, default):
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
-      
+
 # Owner Information
 API_ID = int(environ.get("API_ID", "29421234"))
 API_HASH = environ.get("API_HASH", "ee62adf8f91412661fd086b19cd99872")
@@ -36,9 +36,9 @@ ADMINS = int(environ.get("ADMINS", "1158010451"))
 
 # Database Information
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://fsfeds95:RSFNsdPiGhDoyZY0@cluster0.mesdzxl.mongodb.net/?retryWrites=true&w=majority")
-CDB_NAME = environ.get("CDB_NAME", "cloneapofbotz")
+CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
 DB_URI = environ.get("DB_URI", "mongodb+srv://fsfeds95:RSFNsdPiGhDoyZY0@cluster0.mesdzxl.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = environ.get("DB_NAME", "apofbotz")
+DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -47,7 +47,7 @@ DB_NAME = environ.get("DB_NAME", "apofbotz")
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 BOT_USERNAME = environ.get("BOT_USERNAME", "Stream_APOf_bot") # your bot username without @
-PICS = (environ.get('PICS', 'https://i.ibb.co/KV9NTpt/IMG-20231028-015505-926.jpg https://i.ibb.co/KV9NTpt/IMG-20231028-015505-926.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
@@ -80,7 +80,7 @@ class Var(object):
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1002095754245'))
-    PORT = int(getenv('PORT', 8225))
+    PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     NO_PORT = bool(getenv('NO_PORT', False))
@@ -88,19 +88,18 @@ class Var(object):
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
-    
+
     else:
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://streaming-bot.onrender.com/"
+        URL = "https://streaming-bot.onrender.com"
     else:
-        URL = "https://streaming-bot.onrender.com/"
+        URL = "https://streaming-bot.onrender.com"
 
 
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
-    
