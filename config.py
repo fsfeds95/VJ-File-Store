@@ -30,15 +30,15 @@ def is_enabled(value, default):
 # Ask Doubt on telegram @KingVJ01
       
 # Owner Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-ADMINS = int(environ.get("ADMINS", ""))
+API_ID = int(environ.get("API_ID", "29421234"))
+API_HASH = environ.get("API_HASH", "ee62adf8f91412661fd086b19cd99872")
+ADMINS = int(environ.get("ADMINS", "1158010451"))
 
 # Database Information
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
-CDB_NAME = environ.get("CDB_NAME", "clonevjbotz")
-DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "vjbotz")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://fsfeds95:RSFNsdPiGhDoyZY0@cluster0.mesdzxl.mongodb.net/?retryWrites=true&w=majority")
+CDB_NAME = environ.get("CDB_NAME", "cloneapofbotz")
+DB_URI = environ.get("DB_URI", "mongodb+srv://fsfeds95:RSFNsdPiGhDoyZY0@cluster0.mesdzxl.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = environ.get("DB_NAME", "apofbotz")
 
 # Don't Remove Credit Tg - @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
@@ -46,8 +46,8 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # your bot username without @
-PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg https://graph.org/file/82ef767ffebe3a948e476.jpg')).split() # Bot Start Picture
+BOT_USERNAME = environ.get("BOT_USERNAME", "Stream_APOf_bot") # your bot username without @
+PICS = (environ.get('PICS', 'https://i.ibb.co/KV9NTpt/IMG-20231028-015505-926.jpg https://i.ibb.co/KV9NTpt/IMG-20231028-015505-926.jpg')).split() # Bot Start Picture
 
 # Auto Delete Information
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
